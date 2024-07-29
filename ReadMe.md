@@ -1,5 +1,5 @@
 # Account used by fluxcd to communicate with SOT.
-export GITHUB_USER=biraderomkar
+export GITHUB_USER=Erick-Fernandes-dev
 
 export GITHUB_TOKEN=""
 
