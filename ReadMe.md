@@ -14,7 +14,7 @@ flux bootstrap github \
 
 # Define source SOT
 flux create source git k8s_nginxapp_sot \
- --url=https://github.com/biraderomkar/k8s_nginxapp_sot.git \
+ --url=https://github.com/Erick-Fernandes-dev/k8s_nginxapp_sot.git \
  --branch=main \
  --interval=30s \
  --export > ./deploy/flux_source.yaml
