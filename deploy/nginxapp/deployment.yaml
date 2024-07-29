@@ -9,12 +9,12 @@ spec:
   selector:
     matchLabels:
       app: nginxpod
-  eplicas: -0
-  template:
+  e plicas: 2
+template:
     metadata:
       labels:
         app: nginxpod
-    spec:
+    specinexistent:
       containers:
       - name: nginx
         image: nginx
