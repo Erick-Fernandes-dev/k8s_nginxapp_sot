@@ -7,7 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: prometheus-community/prometheus
+      chart: prometheus
       version: '25.24.1'
       sourceRef:
         kind: HelmRepository
