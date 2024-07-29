@@ -9,16 +9,15 @@ spec:
   selector:
     matchLabels:
       app: nginxpod
-  e plicas: 2
-template:
+  replicas: 5
+  template:
     metadata:
       labels:
         app: nginxpod
-    specinexistent:
+    spec:
       containers:
       - name: nginx
         image: nginx
         imagePullPolicy: Always
         ports:
         - containerPort: 80
-
