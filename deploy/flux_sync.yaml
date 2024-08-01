@@ -11,4 +11,4 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: k8s_nginxapp_sot
+    name: k8snginxappsot
