@@ -13,13 +13,15 @@ flux bootstrap github \
  --personal
 
 # Define source SOT
+```shell
 flux create source git k8s_nginxapp_sot \
  --url=https://github.com/Erick-Fernandes-dev/k8s_nginxapp_sot.git \
  --branch=main \
  --interval=30s \
  --export > ./deploy/flux_source.yaml
-
+```
 # Apply above source SOT using kustomization controller
+```shell
  flux create kustomization k8s_nginxapp_sot \
  --source=k8s_nginxapp_sot  \
  --path="./deploy/" \
@@ -27,8 +29,9 @@ flux create source git k8s_nginxapp_sot \
  --validation=client \
  --interval=30s  \
  --export > ./deploy/flux_sync.yaml
-
+```
  # Setup Sealed Secret Controller
+ 
  wget https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.18.1/controller.yaml
 
  kubectl apply -f controller.yaml
