@@ -10,10 +10,14 @@ spec:
     matchLabels:
       app: nginxpod
 <<<<<<< HEAD
+<<<<<<< HEAD
   replicas: 2
 =======
   replicas: 6
 >>>>>>> 79d8ac1 (replica 6)
+=======
+  replicas: 7
+>>>>>>> 748a5dc (commit 7)
   template:
     metadata:
       labels:
